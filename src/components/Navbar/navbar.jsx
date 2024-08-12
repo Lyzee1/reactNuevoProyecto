@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/img/logo.png'
 import { Link } from 'react-router-dom';
 
-function Navbaar() {
+function Navbaar () {
     return(
     <>
         <div>

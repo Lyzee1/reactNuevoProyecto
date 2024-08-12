@@ -1,16 +1,10 @@
-
 import Carrusel from "../carrusel/carrusel";
 import Abajo from "../footer/footer";
-import Navbaar from "../navbar/navbar";
-
 import './inicio.css'
 
 function Inicio ( ) {
     return (
         <>
-        <div className="divnav">
-        <Navbaar />
-        </div>
         <div className="divcarr">
             <br />
         <Carrusel />
@@ -41,8 +35,7 @@ function Inicio ( ) {
         <div className="video">
             <iframe src="https://www.youtube.com/embed/ZFCFZd3o4IU?si=V71E_eIztPrN0mFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-<br />
-<br />
+
          <div className="contenedor">
          <h1 className="mayus">LIBERTADORES</h1>
          <span className="minus">copa</span>
