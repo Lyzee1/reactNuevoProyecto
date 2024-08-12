@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.divnav{
+    background-color: #98cef0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.copasAnio {
+ font-size: 70px;
+}
+
+.botonizq{
+  width: 300px;
+  margin-right: 380px;
+  margin-bottom: 30px ;
+  position: relative;
+  bottom: 75px;
+background-color: #98cef0;
+color: black;
+}
+
+.botonder{
+width: 300px;
+background-color: #98cef0;
+position: relative;
+  bottom: 80px;
+color: black;
+}
+
+.copasNombre {
+  padding: 20px;
+  font-size: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+
+  .copasNombre {
+    font-size: 50px;
+  }
+
+  .copasAnio {
+    font-size: 70px;
+  }
+
+  .botonizq,
+  .botonder {
+    width: 150px;
+    bottom: 0;
+    margin-right: 20px;
+  }
+}

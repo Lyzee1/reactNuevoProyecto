@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+PE:wght@100..400&display=swap");
+
+.divnav {
+  background-color: #98cef0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.divcarr {
+  background-image: url("../../assets/img/fondocarrusel.jpg");
+  background-size: 110%;
+  background-position: center;
+  width: 100%;
+}
+
+.agendaimg {
+  width: 800px;
+  margin: 10px;
+}
+
+.agendabut {
+  background-color: white;
+}
+
+.line {
+  background-color: #98cef0;
+  height: 5px;
+}
+
+.contenedor {
+  position: relative;
+  background-image: url("../../assets/img/vivi.jpg");
+  background-repeat: no-repeat; 
+  background-size: 120%;
+}
+.mayus {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: rgba(55, 210, 221, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.minus {
+  letter-spacing: 19px;
+  font-family: "Playwrite PE", cursive;
+  font-size: 50px;
+  position: absolute;
+  top: 21px;
+  transform: translateX(-49%);
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.842);
+  white-space: nowrap;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video iframe {
+  width: 1200px;
+  height: 600px;
+}
+
+.mc {
+  background-image: url("../../assets/img/bannermg.jpg");
+  background-size: 100%;
+}
+
+.mg {
+  background-image: url("../../assets/img/bannermg.jpg");
+  background-size: 100%;
+}
+
+.gridcont {
+  display: grid;
+  width: 1000px;
+  max-height: 80%;
+  background: rgb(255, 255, 255);
+  grid-template-areas:
+    ". llaveuno . llavedos ."
+    ". llavetres . llavecuatro ."
+    ". llavecinco . llaveseis ."
+    ". llavesiete . llaveocho .";
+    align-content: space-evenly;
+    justify-content: space-around;
+    align-items: start;
+  margin: auto;
+}
+
+.llaveuno,
+.llavedos,
+.llavetres,
+.llavecuatro,
+.llavecinco,
+.llaveseis,
+.llavesiete,
+.llaveocho {
+  background-color: black;
+  height: 25%;
+}
+
+.llaveuno h3,
+.llavedos h3,
+.llavetres h3,
+.llavecuatro h3,
+.llavecinco h3,
+.llaveseis h3, 
+.llavesiete h3,
+.llaveocho h3{
+color: white;
+}
+
+.llaveuno {
+  grid-area: llaveuno;
+}
+
+.llavedos {
+  grid-area: llavedos;
+}
+
+.llavetres {
+  grid-area: llavetres;
+}
+
+.llavecuatro {
+  grid-area: llavecuatro;
+}
+
+.llavecinco {
+  grid-area: llavecinco;
+}
+
+.llaveseis {
+  grid-area: llaveseis;
+}
+
+.llavesiete {
+  grid-area: llavesiete;
+}
+
+.llaveocho {
+  grid-area: llaveocho;
+}
+
+
+.vs{
+  background-color: white;
+}
+
+.hs{
+  background-color: #98cef0;
+}
+
+
+@media (max-width: 1200px) {
+  .video iframe {
+    width: 1080px; 
+    height: 300px; 
+  }
+
+  .agendaimg {
+    width: 90vw; 
+  }
+}
+
+@media (max-width: 1000px) {
+  .gridcont {
+    width: 90vw;  
+  }
+}
+
+@media (max-width: 768px) {
+  .gridcont {
+    grid-template-areas:  
+      "llaveuno"
+      "llavedos"
+      "llavetres"
+      "llavecuatro"
+      "llavecinco"
+      "llaveseis"
+      "llavesiete"
+      "llaveocho";
+  }
+
+  .mayus {
+    font-size: 80px; 
+  }
+
+  .minus {
+    font-size: 30px; 
+  }
+
+  .mc, .mg {
+    background-size: 0%;
+  }
+
+  .contenedor {
+    position: relative;
+    background-image: url("../../assets/img/vivi.jpg"); 
+    background-size: 150%;
+  }
+
+  .divcarr {
+    background-image: url("../../assets/img/fondocarrusel.jpg");
+    background-size: 130%;
+  }
+}

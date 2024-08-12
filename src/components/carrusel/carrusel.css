@@ -1,0 +1,14 @@
+.carrusel img {
+    width: 80%; 
+    height: auto;
+    max-width: 100%; 
+  }
+  
+@media (max-width: 768px) { 
+    .carrusel {
+      width: 120%;
+      position: relative;
+      right: 53px;
+    }
+  }
+  
